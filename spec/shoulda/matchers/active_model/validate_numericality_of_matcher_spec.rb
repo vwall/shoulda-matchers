@@ -129,7 +129,7 @@ describe Shoulda::Matchers::ActiveModel::ValidateNumericalityOfMatcher do
         def set_attr!; self.attr = 5 end
       end.new
 
-      subject.stubs(:set_attr!)
+      subject.stub(:set_attr!)
       subject.should matcher.odd
     end
   end

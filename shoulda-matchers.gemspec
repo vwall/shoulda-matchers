@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency('appraisal',   '~> 0.4')
   s.add_development_dependency('aruba')
-  s.add_development_dependency('bourne',      '~> 1.3')
   s.add_development_dependency('bundler',     '~> 1.1')
   s.add_development_dependency('cucumber',    '~> 1.1')
   s.add_development_dependency('rails',       '~> 3.0')

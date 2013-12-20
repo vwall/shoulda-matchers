@@ -7,7 +7,7 @@ describe Shoulda::Matchers::ActiveRecord::AssociationMatchers::ModelReflection d
       belongs_to :country
     end
     delegate_reflection = person_model.reflect_on_association(:country)
-    delegate_reflection.stubs(foo: 'bar')
+    delegate_reflection.stub(foo: 'bar')
     reflection = described_class.new(delegate_reflection)
 
     expect(reflection.foo).to eq 'bar'
