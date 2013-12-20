@@ -1,4 +1,3 @@
-require 'bourne'
 require 'active_support/deprecation'
 begin
   require 'strong_parameters'
