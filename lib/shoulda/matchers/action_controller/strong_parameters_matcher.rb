@@ -75,8 +75,6 @@ module Shoulda
         end
 
         def stubbed_model_attributes
-          extend Mocha::API
-
           model_attrs = ::ActionController::Parameters.new(arbitrary_attributes)
           model_attrs.stubs(:permit)
           ::ActionController::Parameters.any_instance.stubs(:[]).returns(model_attrs)
